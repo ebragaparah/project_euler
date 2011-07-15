@@ -15,8 +15,8 @@ class PrimeFactorsSpec(unittest.TestCase):
   def test_the_largest_prime_factor_of_13195_is_29(self):
     largest_prime_factor(13195) |should| equal_to(29)
 
-  def test_the_largest_prime_factor_of_600851475143_is_29(self):
-    largest_prime_factor(600851475143) |should| equal_to(200)
+  def test_the_largest_prime_factor_of_600851475143_is_x(self):
+    largest_prime_factor(600851475143) |should| equal_to(0)
 
 if __name__ == '__main__':
   unittest.main()
