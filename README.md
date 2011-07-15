@@ -1,1 +1,1 @@
-descrição dos meus códigos do Project Euler
+descrição dos meus códigos do Project Euler.
