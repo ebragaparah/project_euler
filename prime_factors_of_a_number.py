@@ -1,20 +1,9 @@
-from math import sqrt
-
-def is_prime(number):
-  if number < 2:
-    return False
-  else:
-    count = 0
-    for iterator in xrange(1, int(sqrt(number))+1):
-      if number % iterator == 0:
-        count += 1
-  return count <= 1
-
 def primes_below(number):
-  primes = []
-  for iterator in xrange(2, number+1):
-    if is_prime(iterator):
-      primes.append(iterator)
+  primes = list(xrange(2, number))
+  for iterator in primes:
+    for jumper in primes:
+      if (jumper % iterator == 0) and (jumper != iterator):
+       numbers.remove(jumper)
   return primes
 
 def prime_factors(number):
