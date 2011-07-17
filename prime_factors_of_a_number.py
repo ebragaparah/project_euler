@@ -3,7 +3,7 @@ def primes_below(number):
   for iterator in primes:
     for jumper in primes:
       if (jumper % iterator == 0) and (jumper != iterator):
-       numbers.remove(jumper)
+       primes.remove(jumper)
   return primes
 
 def prime_factors(number):
