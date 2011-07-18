@@ -9,14 +9,10 @@ def primes_below(number):
 def prime_factors(number):
   factors = []
   list_of_primes_below = primes_below(number)
-  while number != 1:
-    for iterator in list_of_primes_below:
-      if number % iterator == 0:
-        number /= iterator
-        factors.append(iterator)
-      else:
-        continue
-      break
+  for iterator in list_of_primes_below:
+    while number % iterator == 0:
+      number /= iterator
+      factors.append(iterator)
   return factors
 
 def largest_prime_factor(number):
