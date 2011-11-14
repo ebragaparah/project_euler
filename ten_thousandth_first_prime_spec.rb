@@ -4,7 +4,6 @@ require './ten_thousandth_first_prime'
 
 describe "Ten thousandth-first prime number." do
   context "Verifying if a number is prime." do
-    
     it "Should return true if number is prime." do
       0.prime?.should == false
       1.prime?.should == false

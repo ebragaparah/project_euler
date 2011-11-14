@@ -1,14 +1,14 @@
 include Math
 
 class Fixnum
-	def prime?
-	  divisors = []
-	  case self
+  def prime?
+    divisors = []
+    case self
     when 0, 1
       false
     else
-	    (1..(sqrt(self.abs).to_i + 1)).each do |iterator|
-	      divisors << iterator if ((self % iterator).zero?) and (self != iterator)
+      (1..(sqrt(self.abs).to_i + 1)).each do |iterator|
+        divisors << iterator if ((self % iterator).zero?) and (self != iterator)
       end
       divisors.length <= 1
     end
