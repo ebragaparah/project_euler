@@ -20,21 +20,29 @@ describe 'Finding Circular Prime Numbers.' do
     end
   end
 
-  context 'Shows the sum of the circular prime numbers below some number.' do
-    it 'Should returns 5 for the sum of the circular primes from 1 to 3' do
-      sum_of_circular_prime_numbers_to(3).should == 5
+  context 'Shows how many circular prime numbers the are below some number.' do
+    it 'Should returns 2 for the count of the circular primes from 1 to 3' do
+      how_many_circular_prime_numbers_to?(3).should == 2
     end
 
-    it 'Should returns 10 for the sum of the circular primes from 1 to 5' do
-      sum_of_circular_prime_numbers_to(5).should == 10
+    it 'Should returns 3 for the count of the circular primes from 1 to 5' do
+      how_many_circular_prime_numbers_to?(5).should == 3
     end
 
-    it 'Should returns 28 for the sum of the circular primes from 1 to 11' do
-      sum_of_circular_prime_numbers_to(11).should == 28
+    it 'Should returns 5 for the count of the circular primes from 1 to 11' do
+      how_many_circular_prime_numbers_to?(11).should == 5
     end
 
-    it 'Should returns 5134267694 for the sum of the circular primes from 1 to 1000000' do
-      sum_of_circular_prime_numbers_to(1000000).should == 5134267694
+    it 'Should returns 13 for the count of the circular primes from 1 to 100' do
+      how_many_circular_prime_numbers_to?(100).should == 13
+    end
+
+    it 'Should returns 11297 for the count of the circular primes from 1 to 1000000' do
+      how_many_circular_prime_numbers_to?(1000000).should == 11297
+    end
+
+    it 'Should returns 11297 for the count of the circular primes below 1000000' do
+      how_many_circular_prime_numbers_to?(999999).should == 11297
     end
   end
 end
